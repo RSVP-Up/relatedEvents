@@ -1,0 +1,72 @@
+{
+  "name": "relatedevents",
+  "version": "1.0.0",
+  "description": "carousel of related events",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "db:seed": "node ./database/seed.js",
+    "build:dev": "webpack -d --watch",
+    "build:prod": "webpack -p",
+    "start:dev": "nodemon server/index.js",
+    "start": "node ./server/index.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drliskov/relatedEvents.git"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "Microservice"
+  ],
+  "author": "Manu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drliskov/relatedEvents/issues"
+  },
+  "homepage": "https://github.com/drliskov/relatedEvents#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "css-loader": "^3.3.2",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.9.0",
+    "request": "^2.88.0",
+    "sinon": "^7.5.0",
+    "sinon-mongoose": "^2.3.0",
+    "style-loader": "^1.0.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.12",
+    "query-string": "^6.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^4.4.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
